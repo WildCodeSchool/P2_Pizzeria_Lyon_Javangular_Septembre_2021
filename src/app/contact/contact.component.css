@@ -164,12 +164,15 @@ img{
   width:100px;
 }
 .adresse p{
+
 margin-left:  50px;
 font-family:ZillaSlab-Italic; ;
 
 }
 
+.horaire p{
 
+}
 .horaire{
   width: 330px;
   display: flex;

@@ -1,61 +1,120 @@
 <div class="container">
-  
-   <form >
-      <div>
+  <form (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
+    <div>
+      Form submitted ? {{ myForm.submitted }} Form valid ? {{ myForm.valid }} Form invalid ?
+      {{ myForm.invalid }}
+    </div>
+    <div>
+      <label for="lastName-user">Nom:</label>
+      <input
+        type="text"
+        name="lastName-user"
+        [(ngModel)]="user.lastName"
+        #lastName="ngModel"
+        required
+        minlength="3"
+        maxlength="15"
+      />
+    </div>
+    <!--message d'erreur-->
+    <div *ngIf="myForm.submitted && lastName.errors">
+      <span *ngIf="lastName.errors.required"> le nom est requis</span>
+      <span *ngIf="lastName.errors.minlength">le nom doit comporter au moins 3 caractére </span>
+      <span *ngIf="lastName.errors.maxlength"> le nom ne depasse pas plus 15 caractére </span>
+    </div>
 
-        <label for="name">Nom:</label>
-      <input type="text" id="name" name="user_name" >                             
-         
-         
-      </div>
-      <div>
-        <label for="name">Prenom:</label>
-        <input type="text" id="name" name="user_name">
-      </div>
-      <div>
-          <label for="mail">e-mail :</label>
-          <input type="email" id="mail" name="user_mail">
-      </div>
-      <div>
-        <label for="titre">Titre:</label>
-        <input type="text" id="titre" name="user_titre">
-      </div>
-      <div>
-          <label for="msg">Message :</label>
-          <textarea id="msg" name="user_message"></textarea>
-      </div>
-      <div class="button">
-              <button type="submit">Envoyer</button>
-      </div>
+    <div>
+      <label for="firstName-user">Prenom:</label>
+      <input
+        type="text"
+        name="firstName-user"
+        [(ngModel)]="user.firstName"
+        #firstName="ngModel"
+        required
+        maxlength="15"
+        minlength="3"
+      />
+    </div>
+    <!--message d'erreur-->
+    <div *ngIf="myForm.submitted && firstName.errors">
+      <span *ngIf="firstName.errors.required">le prénom est requis</span>
+      <span *ngIf="firstName.errors.minlength">le prenom doit comporté au moins 3 caractére</span>
+      <span *ngIf="firstName.errors.maxlength"> le prenom ne doit pas dépasser les 15 caractére</span>
+    </div>
+    <div>
+      <label for="mail-user">e-mail :</label>
+      <input
+        type="email"
+        id="mail"
+        name="mail-user"
+        [(ngModel)]="user.mail"
+        #mail="ngModel"
+        required
+        email
+      />
+    </div>
+    <!--message d'erreurs-->
+    <div *ngIf="myForm.submitted && mail.errors">
+      <span *ngIf="mail.errors.required">le mail est requis</span>
+      <span *ngIf="mail.errors.email"> l'email est invalide</span>
+    </div>
+    <div>
+      <label for="tittle-user">Titre:</label>
+      <input type="text" name="tittle.user" 
+      [(ngModel)]="user.tittle" 
+      id="tittle"
+      #tittle="ngModel"
+      required />
+    </div>
+    <!--message d'erreurs-->
+    <div *ngIf="myForm.submited && tittle.errors">
+      <span *ngIf="tittle.errors.required"> le texte est requis</span>
+    </div>
+    <div>
+      <label for="message-user">Message :</label>
+      <textarea name="message-user"
+      [(ngModel)]="user.message"
+      id="message"
+      #message="ngModel"
+      required
       
       
-     </form>
-     <div class="adresse">
-        <img src="https://cdn.discordapp.com/attachments/895286368824094753/908424555473801288/lyon-carte.jpg" alt="carte map"/>
-    
-        <h5>adresse</h5>
-        <p>17,rue Delandine 69002</p>
-        <p>Tel:0651720167</p>
-          
-       </div>
-        
-</div>  
+      ></textarea>
+    </div>
+      <!--message d'erreur-->
+      <div *ngIf="myForm.submited && message.errors">
+        <span *ngIf="message.errors.required"> message requis</span>
+      </div>
+    <div class="button">
+      <button type="submit" (onclick)="onclick">Envoyer</button>
+    </div>
+  </form>
+  <!--image de geocalisation avec l'adresse-->
+  <div class="adresse">
+    <img
+      src="https://cdn.discordapp.com/attachments/895286368824094753/908424555473801288/lyon-carte.jpg"
+      alt="carte map"
+    />
 
-  <div class="horaire">
-  
-         <div class="horaire1">
-            
-          <h5>Horaire d'ouvertire:</h5>
-                <p>lundi:    de 11h à 14h    et  de 19h à 23h   </p>                                                      
-                <p>samedi:  de 11h à 14h    et  de 19h à 23h   </p>    
-                <p>mardi:  de 11h à 14h    et  de 19h à 23h   </p>      
-               <p>Mercredi:   de 11h à 14h    et  de 19h à 23h</p>  
-        </div>
-      
-       <div class="horaire2">
-        <p>Jeudi:      de 11h à 14h    et  de 19h à 23h </p>
-        <p>vendredi:    de 11h à 14h    et  de 19h à 23h  </p>  
-        <p>dimanche:   de 11h à 14h    et  de 19h à 23h</p>
-        </div>
+    <h5>adresse</h5>
+    <p>17,rue Delandine 69002</p>
+    <p>Tel:0651720167</p>
   </div>
-  
+</div>
+<!--les horaires d'ouvertures-->
+
+<div class="horaire">
+  <div class="horaire1">
+    <h5>Horaire d'ouvertire:</h5>
+    <p>lundi: de 11h à 14h et de 19h à 23h</p>
+    <p>samedi: de 11h à 14h et de 19h à 23h</p>
+    <p>mardi: de 11h à 14h et de 19h à 23h</p>
+    <p>Mercredi: de 11h à 14h et de 19h à 23h</p>
+  </div>
+
+  <div class="horaire2">
+    <p>Jeudi: de 11h à 14h et de 19h à 23h</p>
+    <p>vendredi: de 11h à 14h et de 19h à 23h</p>
+    <p>dimanche: de 11h à 14h et de 19h à 23h</p>
+  </div>
+</div>
