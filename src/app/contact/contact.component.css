@@ -62,7 +62,7 @@ textarea {
   /* Pour donner assez de place pour écrire du texte */
   height: 100px;
   border: rgb(209, 176, 133) solid;
-  background-color: black;
+  background-color:black;
 }
 
 .button {
@@ -94,19 +94,7 @@ img {
   justify-content: space-around;
 }
 
-/* .horaire1{
-     margin-left :110px;
-     top:400px;
-     margin-top: 20px;
-  }
-  .horaire2{
-    margin-left:450px;
-  margin-top: 20px;
-  top: 800px;
-  bottom:200px;
-  
 
-  }*/
 p {
   font-family: ZillaSlab-Italic;
   font-size: 17px;
