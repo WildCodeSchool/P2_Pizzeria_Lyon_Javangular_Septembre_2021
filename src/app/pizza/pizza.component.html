@@ -1,5 +1,10 @@
-<p>{{ pizza.nom }}</p>
-<p>{{pizza.imageUrl}}</p>
+<div>
+<p class="nom">{{ pizza.nom }}</p>
+<img src="{{pizza.imageUrl}}" alt="{{pizza.nom}}"/>
 <p>{{pizza.description}}</p>
-<p>{{pizza.ingredients}}</p>
-<p>{{pizza.cout}}</p>
+<p>Ingredient:<br>{{pizza.ingredients}}</p>
+<p>prix :{{pizza.cout}}
+    £</p>
+</div>
+
+
