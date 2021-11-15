@@ -3,31 +3,43 @@ p {
 }
 .nom {
   font-size: 30px;
+  font-family: UniversLT-UltraCondensed - 500;
+  height: 30px;
 }
 
 img {
   width: 100%;
 }
 @media screen and (max-width: 780px) {
-  .container {
-    display: grid;
-    grid-template-columns: auto, auto;
-    grid-template-rows: auto, auto;
-    column-gap: 10px;
-    row-gap: 10px;
-    /* margin-left: 10px; */
+.container {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto,auto,auto,auto,auto,auto;
+  
+   
+   
+}
+
+    
+   
   }
   img {
-    width: 100px;
+    width: 100%;
   }
   .nom {
     font-size: 15px;
+    color:whitesmoke;
+    font-family: 
+    UniversLT-UltraCondensed;;
   }
   p {
-    font-size: 10px;
+    font-size: 17px;
+    font-family: ZillaSlab-Italic;
   }
   .description {
     width: 100%;
-    /* overflow-wrap: break-word; */
+     overflow-wrap: break-word; 
+    color:whitesmoke;
   }
-}
+  
+
