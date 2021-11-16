@@ -50,5 +50,4 @@ export const pizzaMock: Pizza[] = [
     8.9,
     ['tomates', 'Mozzarella', 'jambon', 'ananas']
   ),
-  ,
 ];

@@ -1,5 +1,6 @@
 p {
   color:  #d1b085;
+  margin:1em;
 }
 #nom {
   font-size: 25px;
@@ -14,6 +15,8 @@ p {
 
 img {
   width: 100%;
+ 
+
 }
 @media screen and (max-width: 780px) {
 .container1 {
@@ -30,6 +33,7 @@ img {
   }
   img {
     width: 100%;
+    margin:1em;
   }
   .nom {
     font-size: 15px;
