@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container1" >
     
-<p class="nom">{{ pizza.nom }}</p>
+<p id="nom">{{ pizza.nom }}</p>
 
 <img src="{{pizza.imageUrl}}" alt="{{pizza.nom}}"/>
 <div class="description">
     <p> {{pizza.description}}</p>
-    <p> ingredient: <span *ngFor="let ingredient of pizza.ingredients">{{ingredient}}, </span></p>
+    <p id="ingredient"> ingredient: <span *ngFor="let ingredient of pizza.ingredients">{{ingredient}}, </span></p>
     <p>{{pizza.cout}}€</p>
 </div>
 

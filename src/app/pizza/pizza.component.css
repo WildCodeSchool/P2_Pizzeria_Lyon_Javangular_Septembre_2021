@@ -1,22 +1,27 @@
 p {
-  color: #d1b085;
+  color:  #d1b085;
 }
-.nom {
-  font-size: 30px;
-  font-family: UniversLT-UltraCondensed - 500;
+#nom {
+  font-size: 25px;
+  font-family:ZillaSlab-Italic - 400;
   height: 30px;
+  color:whitesmoke;
+}
+#ingredient{
+  color:whitesmoke;
+  font-family: italic;
 }
 
 img {
   width: 100%;
 }
 @media screen and (max-width: 780px) {
-.container {
+.container1 {
     display:grid;
     grid-template-columns: auto;
     grid-template-rows: auto,auto,auto,auto,auto,auto;
   
-   
+ 
    
 }
 
