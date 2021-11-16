@@ -4,8 +4,8 @@
 
 <img src="{{pizza.imageUrl}}" alt="{{pizza.nom}}"/>
 <div class="description">
-   
-    <p> <span *ngFor="let ingredient of pizza.ingredients">{{ingredient}}, </span></p>
+    <p> {{pizza.description}}</p>
+    <p> ingredient: <span *ngFor="let ingredient of pizza.ingredients">{{ingredient}}, </span></p>
     <p>{{pizza.cout}}€</p>
 </div>
 
