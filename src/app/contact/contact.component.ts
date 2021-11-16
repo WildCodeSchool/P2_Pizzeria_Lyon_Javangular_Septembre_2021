@@ -10,8 +10,7 @@ export class ContactComponent {
 
   onSubmit() {
     console.log(this.user);
-  }
-  onClick() {
     alert('votre message bien reçu');
   }
+
 }
