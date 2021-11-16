@@ -1,0 +1,13 @@
+#textFooter{
+    padding:none;
+    font-size: 10px;
+    left:0px;
+}
+a {
+    text-decoration: none;
+    color:white;
+    margin-right: 3px;
+}
+a:hover{
+    color:black;
+}
