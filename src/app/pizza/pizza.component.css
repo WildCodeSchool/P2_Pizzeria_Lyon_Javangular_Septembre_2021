@@ -8,7 +8,7 @@ p {
   color:whitesmoke;
 }
 #ingredient{
-  color:whitesmoke;
+
   font-family: italic;
 }
 
@@ -34,8 +34,8 @@ img {
   .nom {
     font-size: 15px;
     color:whitesmoke;
-    font-family: 
-    UniversLT-UltraCondensed;;
+    font-family: ZillaSlab-Italic;
+
   }
   p {
     font-size: 17px;
@@ -44,7 +44,7 @@ img {
   .description {
     width: 100%;
     /* overflow-wrap: break-word; */
-    color:whitesmoke;
+ 
   }
   
 
