@@ -8,4 +8,7 @@ import {Pizza} from '../../shared/model/pizza.model';
 })
 export class PizzaComponent {
   @Input() pizza: Pizza;
+  getInfo(ingredient: string) {
+    console.log(ingredient);
+  }
 }
