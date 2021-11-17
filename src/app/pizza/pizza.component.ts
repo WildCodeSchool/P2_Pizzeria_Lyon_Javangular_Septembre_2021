@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Pizza} from '../shared/model/pizza.model';
+import {Pizza} from '../../shared/model/pizza.model';
 
 @Component({
   selector: 'app-pizza',
@@ -8,4 +8,7 @@ import {Pizza} from '../shared/model/pizza.model';
 })
 export class PizzaComponent {
   @Input() pizza: Pizza;
+  getInfo(ingredient: string) {
+    console.log(ingredient);
+  }
 }

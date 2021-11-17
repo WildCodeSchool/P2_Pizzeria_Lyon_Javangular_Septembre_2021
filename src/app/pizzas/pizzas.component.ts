@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {pizzaMock} from 'src/assets/mocks/pizzas.mock';
-import {Pizza} from '../shared/model/pizza.model';
+import {Pizza} from '../../shared/model/pizza.model';
 
 @Component({
   selector: 'app-pizzas',

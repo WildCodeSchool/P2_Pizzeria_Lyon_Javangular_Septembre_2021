@@ -1,4 +1,4 @@
-import {Pizza} from 'src/app/shared/model/pizza.model';
+import {Pizza} from 'src/shared/model/pizza.model';
 
 export const pizzaMock: Pizza[] = [
   new Pizza(
@@ -50,5 +50,4 @@ export const pizzaMock: Pizza[] = [
     8.9,
     ['tomates', 'Mozzarella', 'jambon', 'ananas']
   ),
-  ,
 ];

@@ -1,3 +1,10 @@
 .justifyText{
   text-align: justify;
 }
+#texteHome{
+  font-family:serif;
+  color:#131212;
+}
+span{
+  color:#ddb684;
+}
