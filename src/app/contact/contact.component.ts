@@ -12,5 +12,4 @@ export class ContactComponent {
     console.log(this.user);
     alert('votre message bien reçu');
   }
-
 }

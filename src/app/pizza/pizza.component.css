@@ -1,54 +1,41 @@
 p {
-  color:  #d1b085;
-  margin:1em;
+  color: #d1b085;
 }
 #nom {
   font-size: 25px;
-  font-family:ZillaSlab-Italic - 400;
+  font-family: ZillaSlab-Italic - 400;
   height: 30px;
-  color:whitesmoke;
+  color: whitesmoke;
 }
-#ingredient{
-
+#ingredient {
+  color: whitesmoke;
   font-family: italic;
 }
 
 img {
   width: 100%;
- 
-
 }
 @media screen and (max-width: 780px) {
-.container1 {
-    display:grid;
+  .container1 {
+    display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto,auto,auto,auto,auto,auto;
-  
- 
-   
+    grid-template-rows: auto, auto, auto, auto, auto, auto;
+  }
 }
-
-    
-   
-  }
-  img {
-    width: 100%;
-    margin:1em;
-  }
-  .nom {
-    font-size: 15px;
-    color:whitesmoke;
-    font-family: ZillaSlab-Italic;
-
-  }
-  p {
-    font-size: 17px;
-    font-family: ZillaSlab-Italic;
-  }
-  .description {
-    width: 100%;
-    /* overflow-wrap: break-word; */
- 
-  }
-  
-
+img {
+  width: 100%;
+}
+.nom {
+  font-size: 15px;
+  color: whitesmoke;
+  font-family: UniversLT-UltraCondensed;
+}
+p {
+  font-size: 17px;
+  font-family: ZillaSlab-Italic;
+}
+.description {
+  width: 100%;
+  /* overflow-wrap: break-word; */
+  color: whitesmoke;
+}
