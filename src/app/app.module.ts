@@ -9,6 +9,7 @@ import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {PizzasComponent} from './pizzas/pizzas.component';
 import {PizzaComponent} from './pizza/pizza.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {PizzaComponent} from './pizza/pizza.component';
     PizzasComponent,
     PizzaComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
