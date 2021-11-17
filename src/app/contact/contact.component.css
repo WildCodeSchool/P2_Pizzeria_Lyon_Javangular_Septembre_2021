@@ -5,7 +5,9 @@
   gap: 10px;
   justify-content: space-between;
 }
-
+.swal2-styled.swal2-confirm{
+  background-color: rgb(209, 176, 133) ;
+}
 form {
   /* Uniquement centrer le formulaire sur la page */
   left: 0px;
