@@ -1,15 +1,15 @@
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {Observable, observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FoodsService {
-  private baseProduit = 'https://world.openfoodfacts.org/api/v0/product/[].json';
+  private baseProduit = 'https://world.openfoodfacts.org/api/v0/product/';
   constructor(private http: HttpClient) {}
 
-  getProduit(): Observable<any> {
-    return this.http.get(this.baseProduit);
+  getProduit(EAN): Observable<any> {
+    return this.http.get(this.baseProduit + EAN + '.json');
   }
 }
