@@ -1,0 +1,53 @@
+[
+    {
+        "nom": "Mozzarella",
+        "EAN": "80004301132601"
+    },
+    {
+        "nom": "jambon",
+        "EAN": "3095757370015"
+    },
+    {
+       "nom":"emmental",
+       "EAN":"3250391294916"
+
+    },
+    {
+     "nom":"tomates"   ,
+     "EAN":"3038352875035"
+    } ,
+    {
+     "nom":"citron",
+     "EAN":"3564700737194"
+    },
+    {
+        "nom":"pesto",
+        "EAN":"8076809578257"
+    },
+    {
+        "nom":"pommes de terre sautées",
+        "EAN":"3250390137115"
+    },
+    {
+        "nom":"basilic"   ,
+        "EAN":"3333313202012"
+    },
+    {
+        "nom":"Fourme d'ambert",
+        "EAN":"0206872018178"
+        
+    },
+    {
+        "nom":"Reblochon",
+        "EAN":" 3294580948747"
+    },
+    {"nom":"ananas",
+        "EAN":"0038900092740"
+
+    },
+    {
+        "nom":"champignons",
+        "EAN":"20143855"
+    }
+     
+]

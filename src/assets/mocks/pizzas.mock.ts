@@ -13,7 +13,7 @@ export const pizzaMock: Pizza[] = [
     'Grande classique, donc reine des pizzas en toute simplicité.',
     'assets/img/reine.png',
     8.9,
-    ['tomates', 'Mozzarella', 'Jambon', 'Champignons']
+    ['tomates', 'Mozzarella', 'jambon', 'champignons']
   ),
   new Pizza(
     'La 4 fromages',
