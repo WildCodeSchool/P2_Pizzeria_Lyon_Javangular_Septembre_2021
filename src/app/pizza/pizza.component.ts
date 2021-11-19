@@ -14,22 +14,27 @@ import {Ingredient} from 'src/shared/model/ingredient.model';
 export class PizzaComponent implements OnInit {
   @Input() pizza: Pizza;
   ingredients: Ingredient[];
-
+  datas: any;
+  infos: string;
   constructor(private foodsService: FoodsService, private codeBarreService: CodeBarreService) {}
 
   ngOnInit(): void {
     this.codeBarreService.getAllCodeBarre().subscribe((ingredients: Ingredient[]) => {
-      console.log(ingredients);
       this.ingredients = ingredients;
     });
   }
 
   getInfo(ingredient: string): void {
-    console.log(ingredient);
-    console.log(this.foodsService.getProduit(this.getEAN(ingredient)));
+    // console.log(ingredient);
+    // console.log(this.foodsService.getProduit(this.getEAN(ingredient)));
+    this.foodsService.getProduit(this.getEAN(ingredient)).subscribe((data) => {
+      this.datas = data;
+      this.infos = this.datas.product.countries;
+      Swal.fire("Pays d'origine : " + this.infos);
+    });
   }
 
-  getEAN(ingredient: string) {
+  getEAN(ingredient: string): string {
     const indexOfIngredient = this.ingredients.findIndex((s) => s.nom == ingredient);
     return this.ingredients[indexOfIngredient].EAN;
   }

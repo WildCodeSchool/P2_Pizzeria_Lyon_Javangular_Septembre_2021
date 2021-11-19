@@ -6,7 +6,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root',
 })
 export class FoodsService {
-  private baseProduit = 'https://world.openfoodfacts.org/api/v0/product/nutri_score';
+  private baseProduit = 'https://world.openfoodfacts.org/api/v0/product/';
   constructor(private http: HttpClient) {}
 
   getProduit(EAN): Observable<any> {
